@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BugRewind · 故障实验室</title><link rel="stylesheet" href="/styles.css"></head>
+<body class="demo-body"><header class="demo-top"><a href="/">← 返回 BugRewind 控制台</a><span>DEMO APPLICATION · SYNTHETIC DATA ONLY</span></header>
+<main class="demo-shell"><div class="demo-art">✳</div><div class="eyebrow">FAULT INJECTION LAB / LOCAL ONLY</div><h1 data-replay-safe>让一次故障变成可追溯的事实</h1><p data-replay-safe class="muted">这里是受控测试环境。你可以启动匿名、脱敏的会话采集，然后触发两种合成故障，并返回控制台回放。</p>
+<div class="demo-banner" id="consent-panel"><b data-replay-safe>隐私优先</b><p data-replay-safe>只有点击“开始采集”才会记录。默认屏蔽任意普通文本与输入内容，不发送请求体、Cookie 或身份信息。</p><button data-testid="start-capture" id="start" class="primary">同意并开始采集 →</button></div>
+<div class="demo-controls"><button data-testid="save-error" id="save" class="secondary" disabled>模拟保存失败 (HTTP 500)</button><button data-testid="throw-error" id="throw" class="secondary" disabled>模拟 JavaScript 异常</button><button id="ok" class="secondary" disabled>正常保存 (200)</button><button id="end" class="ghost" disabled>结束采集</button></div>
+<section class="demo-result"><div class="label">CURRENT STATUS</div><strong data-replay-safe data-testid="demo-status" id="status">等待启动采集</strong><p class="muted" data-replay-safe id="help">使用合成测试数据，不会操作任何真实业务。</p></section>
+<div class="demo-tip">当前会话 ID：<code id="session">未开启</code></div></main><script type="module" src="/demo.js"></script></body></html>

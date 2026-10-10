@@ -1,0 +1,14 @@
+{
+  "name": "bugrewind",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Privacy-first browser incident replay and evidence-driven diagnosis workstation",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch src/server.js",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "test": "node --test tests/*.test.js",
+    "smoke": "node scripts/smoke.js"
+  }
+}
